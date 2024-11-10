@@ -32,12 +32,13 @@
 #descripcion {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
-    color: rgb(142, 172, 205);
+    color: rgb(4, 29, 56);
     max-width: 1000px;
     line-height: 1.6;
     opacity: 0.9;
     margin-bottom: 40px;
     animation: fade-in 1.5s ease-out;
+    margin-top: 0px;
 }
 
 
@@ -76,19 +77,19 @@
     align-items: center;
     gap: 30px;
     max-width: 800px;
-    margin: 20px;
+    margin: 20px auto; 
+    margin-top: 0px;
     animation: fade-in 1.5s ease-out;
 }
 
 .video {
     width: 300px;
     height: 200px;
-    background-color: #cfe8f1;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    color: rgb(142, 172, 205);
+    color: rgb(4, 29, 56);
     border-radius: 10px;
     text-align: center;
     animation: slide-in 1.2s ease-out;
@@ -97,14 +98,15 @@
 .text {
     font-size: 24px;
     font-family: 'Cinzel', serif;
-    color: rgb(142, 172, 205);
+    color: rgb(4, 29, 56);
     animation: slide-in 1.2s ease-out;
+    max-width: 400px; 
 }
 
 .title {
     text-align: center;
     font-size: 20px;
-    color: rgb(142, 172, 205);
+    color: rgb(4, 29, 56);
     margin-top: 20px;
     font-family: 'Cinzel', serif;
     animation: fade-in 1.5s ease-out;
@@ -113,7 +115,7 @@
 .subtitle {
     text-align: center;
     font-size: 16px;
-    color: rgb(142, 172, 205);
+    color: rgb(4, 29, 56);
     margin-top: 5px;
     animation: fade-in 1.5s ease-out;
 }

@@ -51,16 +51,16 @@
 #flor_der {
     transform: rotate(180deg);
     margin-bottom: 0px;
-    margin-right: 1000px;
-    height: 150px;
-    width: 120px;
+    margin-right: 1100px;
+    height: 200px;
+    width: 160px;
 }
 
 #flor_izq {
     margin-top: 0px;
     margin-left: 1000px;
-    height: 150px;
-    width: 120px;
+    height: 200px;
+    width: 160px;
 }
 
 @keyframes slide-in {

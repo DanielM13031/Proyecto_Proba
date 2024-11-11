@@ -20,6 +20,7 @@
 #H1_titulo {
     font-family: 'Cinzel', serif;
     font-size: 4rem;
+    text-align: center;
     color: rgb(142, 172, 205);
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -31,7 +32,8 @@
 #descripcion {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
-    color: rgb(4, 29, 56);
+    text-align: center;
+    color: rgba(10, 38, 68, 0.733);
     max-width: 1000px;
     line-height: 1.6;
     opacity: 0.9;
@@ -40,15 +42,27 @@
     margin-top: 0px;
 }
 
-
 #contexto {
     background: linear-gradient(48deg, rgb(210, 224, 251), rgb(254, 249, 217));
     height: 100vh;
     width: 100vw;
 }
 
+#flor_der {
+    transform: rotate(180deg);
+    margin-bottom: 0px;
+    margin-right: 1000px;
+    height: 150px;
+    width: 120px;
+}
 
-/* Animaciones */
+#flor_izq {
+    margin-top: 0px;
+    margin-left: 1000px;
+    height: 150px;
+    width: 120px;
+}
+
 @keyframes slide-in {
     0% {
         opacity: 0;
@@ -130,4 +144,25 @@
     color: rgb(4, 29, 56);
     margin-top: 5px;
     animation: fade-in 1.5s ease-out;
+}
+
+.text-content {
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-content h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }

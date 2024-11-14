@@ -21,50 +21,71 @@ body {
     overflow: hidden;
 }
 
+#content {
+    width: 100%;
+    max-width: 1260px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center; 
+}
+
 #H1_titulo {
-    font-family: 'Cinzel', serif;
-    font-size: 4rem;
-    text-align: center;
+    font-size: 7vw;
     color: rgb(142, 172, 205);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    animation: slide-in 1.2s ease-out;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 #descripcion {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 1.5vw;
     color: rgba(10, 38, 68, 0.733);
-    max-width: 1000px;
-    line-height: 1.6;
-    opacity: 0.9;
-    margin-bottom: 40px;
-    animation: fade-in 1.5s ease-out;
-    margin-top: 0px;
+    max-width: 800px; 
+    margin: 0 auto; 
+    margin-top: 20px;
+    text-align: center;
 }
 
 #flor_der {
-    transform: rotate(180deg);
-    margin-bottom: 0px;
-    margin-right: 1100px;
-    height: 200px;
-    width: 160px;
+    position: absolute;
 }
 
 #flor_izq {
-    margin-top: 0px;
-    margin-left: 1000px;
-    height: 200px;
-    width: 160px;
+    transform: rotate(180deg);
+    position: absolute;
+}
+
+#conclusiones {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100VW;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conclusion p {
+    font-size: 2vw;
+    color: rgb(10, 38, 68);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.agradecimientos p {
+    font-size: 1.2vw;
+    color: rgb(10, 38, 68);
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .container {
     display: flex;
     align-items: center;
     gap: 20px; 
-    max-width: 100%; 
+    max-width: 90%; 
     margin: 20px auto;
     margin-top: 0px;
     animation: fade-in 1.5s ease-out;
@@ -177,12 +198,34 @@ body {
 .scroll-animation {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;    
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
 }
 
 .scroll-animation.visible {
     opacity: 1;
     transform: translateY(0);    
+}
+
+.btn {
+    background-color: #6B4226;
+    color: white;
+    font-size: 1vw;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background-color: #a37c41;
+}
+
+.btn:active{
+    transform: scale(0.95);
 }
 
 @media (max-width: 1024px) {
@@ -200,10 +243,6 @@ body {
     }
     .grafica img, .infografia img {
         width: 80%; 
-    }
-    #flor_der, #flor_izq {
-        width: 100px;
-        height: 100px;
     }
 }
 
@@ -223,10 +262,6 @@ body {
     .grafica img, .infografia img {
         width: 70%;
     }
-    #flor_der, #flor_izq {
-        width: 100px;
-        height: 100px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -245,8 +280,65 @@ body {
     .grafica img, .infografia img {
         width: 60%; 
     }
-    #flor_der, #flor_izq {
-        width: 100px;
-        height: 100px;
+}
+
+
+@media (min-width: 1024px) {
+    #flor_der {
+        height: 150px;
+        width: 150px;
+        right: 0%;
+        bottom: 5px;
+    }
+    #flor_izq {
+        height: 150px;
+        width: 150px;
+        left: -30px; 
+        top: -30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #flor_der {
+        height: 80px;
+        width: 70px;
+        right: 20px;
+        bottom: 5px;
+    }
+    #flor_izq {
+        height: 80px;
+        width: 70px;
+        left: 20px;
+        top: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    #flor_der {
+        height: 60px;
+        width: 50px;
+        right: 15px;
+        bottom: 5px;
+    }
+    #flor_izq {
+        height: 60px;
+        width: 50px;
+        left: 15px;
+        top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #flor_der {
+        height: 40px;
+        width: 35px;
+        right: 10px;
+        bottom: 40px;
+    }
+    #flor_izq {
+        height: 40px;
+        width: 35px;
+        left: 10px;
+        top: 10px;
     }
 }

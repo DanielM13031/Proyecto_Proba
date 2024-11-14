@@ -1,13 +1,17 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#inicio {
+body {
     background: linear-gradient(135deg, rgb(210, 224, 251), rgb(254, 249, 217));
-    height: 100vh;
+    background-attachment: fixed; 
+    min-height: 100vh; 
+}
+
+#inicio, #contexto {
+    min-height: 100vh; 
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -28,7 +32,6 @@
     animation: slide-in 1.2s ease-out;
 }
 
-
 #descripcion {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
@@ -40,12 +43,6 @@
     margin-bottom: 40px;
     animation: fade-in 1.5s ease-out;
     margin-top: 0px;
-}
-
-#contexto {
-    background: linear-gradient(48deg, rgb(210, 224, 251), rgb(254, 249, 217));
-    height: 100vh;
-    width: 100vw;
 }
 
 #flor_der {
@@ -61,28 +58,6 @@
     margin-left: 1000px;
     height: 200px;
     width: 160px;
-}
-
-@keyframes slide-in {
-    0% {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .container {
@@ -165,4 +140,35 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    #H1_titulo { font-size: 3rem; }
+    #descripcion { font-size: 1rem; }
+}
+
+@media (max-width: 768px) {
+    #H1_titulo { font-size: 2.5rem; }
+    #descripcion { font-size: 0.9rem; }
+    .text { font-size: 4vw; }
+    .title, .subtitle { font-size: 1.2rem; }
+}
+
+@media (max-width: 480px) {
+    #H1_titulo { font-size: 2rem; }
+    #descripcion { font-size: 0.8rem; }
+    .text { font-size: 5vw; }
+    .title, .subtitle { font-size: 1rem; }
+    #flor_der, #flor_izq { width: 100px; height: 100px; }
+}
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animation.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

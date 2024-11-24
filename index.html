@@ -9,15 +9,17 @@
 </head>
 <body>
 
+    <!-- Sección de inicio con fondo parallax -->
     <section class="parallax-background scroll-animation" id="inicio"> 
         <div id="content" class="scroll-animation">
-            <img id="flor_der" src="Flor.png" class="scroll-animation">
+            <img id="flor_der" src="Flor.png" class="scroll-animation" alt="Flor decorativa derecha">
             <h1 id="H1_titulo" class="scroll-animation">Natalidad en Colombia</h1>
             <p id="descripcion" class="scroll-animation">Explorando las tendencias de natalidad y sus implicaciones en la sociedad colombiana.</p>
-            <img id="flor_izq" src="Flor.png" class="scroll-animation">
+            <img id="flor_izq" src="Flor.png" class="scroll-animation" alt="Flor decorativa izquierda">
         </div>
     </section>
 
+    <!-- Sección de contexto -->
     <section class="section scroll-animation" id="contexto"> 
         <div class="container scroll-animation">
             <div class="video scroll-animation">
@@ -30,46 +32,143 @@
             </div>
         </div>
         <div class="title scroll-animation">
-            [Título de # de tema del grupo de datos o estado del arte]
+            [Título de tema del grupo de datos o estado del arte]
         </div>
         <div class="subtitle scroll-animation">
             [Pequeña introducción sobre el tema y explicación de los datos]
         </div>
     </section>
 
+    <!-- Sección de datos estadísticos y análisis -->
     <section class="section scroll-animation" id="datos">
         <div class="container scroll-animation">
-            <div class="grafica">
-                <img src="Colombia.png" alt="Gráfica/video/imagen interactiva" width="300" height="300">
-            </div>
             <div class="contexto">
-                <p>[Contexto del dato asociado a probabilidad]</p>
-            </div>
-        </div>
-
-        <div class="container scroll-animation">
-            <div class="infografia-text">
-                <p>[Texto/resumen asociado a probabilidad]]</p>
-            </div>
-            <div class="infografia">
-                <img src="Infografia.jpg" alt="Infografía interactiva" width="300" height="300">
+                <p>En este espacio, exploraremos a través de herramientas estadísticas las tendencias y factores que han influido en la natalidad en Colombia en los últimos años. Utilizando una variedad de bases de datos y pruebas estadísticas, nuestro objetivo es responder a preguntas fundamentales sobre el comportamiento de la tasa de fecundidad en el país y cómo factores sociales, económicos y educativos influyen en este fenómeno.
+                    A lo largo de la investigación, realizaremos pruebas de hipótesis para determinar si ha habido una reducción en la natalidad, y qué variables podrían estar involucradas, tales como el acceso a la educación y la infraestructura de salud. Además, se presentarán visualizaciones claras y fáciles de entender que ayudarán a interpretar estos complejos datos de manera accesible.
+                    Acompáñanos en este recorrido donde desglosaremos las estadísticas y descubriremos patrones que podrían tener un impacto significativo en el futuro de la población colombiana.</p>
             </div>
         </div>
     </section>
 
+    <!-- Sección de infografías -->
+    <section class="section scroll-animation" id="infografia">
+        <div class="container scroll-animation">
+            <div class="infografia-text">
+                <p>Los mapas presentan la proporción de hogares con acceso a energía, agua potable y saneamiento en Colombia por departamento. 
+                    En el acceso a energía, los departamentos de Cundinamarca y Bogotá muestran una mayor cobertura, mientras que Amazonas, Vaupés y Guainía tienen una cobertura más baja. 
+                    En el acceso al agua potable, Bogotá, Cundinamarca y Antioquia presentan mayores niveles de acceso, mientras que Amazonas y la Orinoquía muestran menor cobertura. En cuanto al acceso a saneamiento,
+                     Bogotá, Antioquia y Valle del Cauca tienen una mayor cobertura, mientras que Amazonas, Vaupés y Chocó tienen menor acceso.
+                </p>
+            </div>
+            <div class="infografia">
+                <img src="info_col.png" alt="Infografía interactiva" width="300" height="300">
+            </div>
+        </div>
+    </section>
+
+    <section class="section scroll-animation" id="infografia_1">
+        <div class="container scroll-animation">
+            <div class="infografia_1">
+                <img src="info_1.png" alt="Infografía interactiva" width="300" height="300">
+            </div>
+            <div class="infografia-text">
+                <p>
+                    La infografía presenta un análisis comparativo de la tasa de fecundidad entre América Latina y Estados Unidos en el período 2010-2022. 
+                    Se plantea como hipótesis nula que las tasas de fecundidad promedio en ambas regiones son iguales, mientras que la hipótesis alternativa sugiere que la tasa en América Latina es mayor. 
+                    Los hallazgos incluyen que la diferencia promedio entre las tasas de fecundidad de ambas regiones oscila entre 0.17 y 0.26 nacimientos por mujer,
+                    algunos países latinoamericanos muestran tasas considerablemente más altas que Estados Unidos, y se identifican países cuya mayor tasa de natalidad contribuye significativamente al promedio regional. 
+                    La información se basa en datos de tasas de fecundidad total (nacimientos por mujer) y pruebas estadísticas para comparar los promedios de las tasas en ambas regiones.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section scroll-animation" id="video"> 
+        <div class="container scroll-animation">
+            <div class="video scroll-animation">
+                <video class="video_1_size" controls>
+                    <source src="video_1.mp4" type="video/mp4">
+                </video>                
+            </div>
+        </div>
+    </section>
+
+    <section class="section scroll-animation" id="infografia_2">
+        <div class="container scroll-animation">
+            <div class="infografia-text">
+                <p>
+                    La gráfica presenta una relación directa entre el nivel educativo de las madres y la edad promedio a la que tienen su primer hijo. A medida que el nivel educativo de la madre aumenta, 
+                    también lo hace la edad promedio al momento de tener su primer hijo. Los valores aumentan progresivamente desde las madres sin nivel educativo o con educación básica hasta aquellas con títulos 
+                    universitarios o de posgrado, que tienden a retrasar significativamente la maternidad. En contraste, las madres con niveles educativos bajos, como "Ninguno", "Preescolar" o "Primaria", 
+                    tienen a sus hijos a edades más tempranas, generalmente por debajo de los 20 años. Esto sugiere que factores como el acceso limitado a la educación superior, presiones económicas y culturales, 
+                    pueden influir en el momento de la maternidad.
+                </p>
+            </div>            
+            <div class="infografia_2">
+                <img src="info_2.png" alt="Infografía interactiva" width="300" height="300">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section scroll-animation" id="infografia_1">
+        <div class="container scroll-animation">
+            <div class="infografia_1">
+                <img src="info_3.jpeg" alt="Infografía interactiva" width="300" height="300">
+            </div>
+            <div class="infografia-text">
+                <p>
+                    La infografía muestra la relación entre el nivel educativo de las madres y su acceso a servicios básicos. Se observa que a mayor nivel educativo, menor es el número promedio de hijos, con una tendencia negativa entre ambas variables. En cuanto a los servicios, el acceso a electricidad, acueducto, alcantarillado y recolección de basura mejora con el aumento del nivel educativo, siendo las madres sin educación las que tienen menor acceso a estos servicios. Por ejemplo, solo el 37% de las mujeres sin educación acceden al acueducto, 
+                    mientras que el 94% de las mujeres con educación de posgrado lo tienen. La brecha es similar en el acceso a alcantarillado y recolección de basura, donde las mujeres con menos educación tienen acceso muy limitado.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section scroll-animation" id="video"> 
+        <div class="container scroll-animation">
+            <div class="video scroll-animation">
+                <video class="video_1_size" controls>
+                    <source src="video_2.mp4" type="video/mp4">
+                </video>                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section scroll-animation" id="infografia_2">
+        <div class="container scroll-animation">
+            <div class="infografia-text">
+                <p>
+                    La infografía presenta una prueba de hipótesis para analizar las tasas de fecundidad por continente desde el año 2000. La hipótesis nula (H0) 
+                    establece que el promedio de la tasa de fecundidad es igual a 2 hijos por mujer, mientras que la hipótesis alternativa (H1) propone que este 
+                    promedio es menor a 2 hijos por mujer. Según los resultados, en África y Asia se aceptó la hipótesis nula para todos los años, indicando tasas iguales o superiores a 2 hijos por mujer. 
+                    En Europa, América del Norte y América del Sur se rechazó la hipótesis nula en varios años, reflejando tasas consistentemente menores a 2 hijos por mujer. 
+                    En Oceanía, se observa un comportamiento mixto, con aceptación de H0 en los primeros años y rechazo en los más recientes. Los valores p reflejan estas decisiones anuales, indicando tendencias regionales en las tasas de fecundidad.
+                </p>
+            </div>            
+            <div class="infografia_2">
+                <img src="info_4.jpeg" alt="Infografía interactiva" width="300" height="300">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de conclusiones -->
     <section class="section scroll-animation" id="conclusiones">
         <div class="container scroll-animation">
             <div class="conclusion">
-                <p>[conclusión de la pagina/trabajo de probabiliadad]</p>
+                <p>[Conclusión de la página/trabajo de probabilidad]</p>
             </div>
-        <div class = "agradecimientos"> 
-            <p>agracdimientosnombres bla bla bla bla </p>
+            <div class="agradecimientos"> 
+                <p>Agradecimientos: [nombres bla bla bla bla]</p>
+            </div>
+            <button class="btn">FORMULARIO</button>
         </div>
-            <button class = "btn" >FORMULARIO</button>
-        </div>
-
     </section>
 
+    <!-- Scripts para animación de scroll y otras interacciones -->
     <script src="script.js"></script>
+
+
 </body>
 </html>

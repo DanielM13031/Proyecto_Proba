@@ -6,11 +6,14 @@
 
 body {
     background: linear-gradient(135deg, rgb(210, 224, 251), rgb(254, 249, 217));
-    background-attachment: fixed; 
-    min-height: 100vh; 
+    background-attachment: fixed;
+    min-height: 100vh;
+    transition: background-color 0.2s ease; 
 }
 
-#inicio, #contexto, #datos {
+
+
+#inicio, #contexto, #datos, #video {
     min-height: 100vh; 
     width: 100vw;
     display: flex;
@@ -93,19 +96,7 @@ body {
     width: 80%; 
 }
 
-.video {
-    flex-shrink: 0; 
-    width: 100%; 
-    max-width: 700px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    color: rgb(4, 29, 56);
-    border-radius: 10px;
-    text-align: center;
-    animation: slide-in 1.2s ease-out;
-}
+
 
 .video video {
     width: 100%;
@@ -163,7 +154,31 @@ body {
     line-height: 1.6;
 }
 
-.grafica, .infografia {
+.contexto p {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y legible */
+    font-size: 2.2rem; /* Tamaño de fuente adecuado */
+    line-height: 2.4; /* Altura de línea para mejor legibilidad */
+    color: #333; /* Color oscuro para el texto */
+    text-align: justify; /* Justificación para un aspecto profesional */
+    padding: 40px; /* Espaciado interno del texto */
+    background-color: #ffffff; /* Fondo blanco para resaltar el texto */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para el texto */
+}
+
+.infografia-text p {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y legible */
+    font-size: 2.2rem; /* Tamaño de fuente adecuado */
+    line-height: 2.4; /* Altura de línea para mejor legibilidad */
+    color: #333; /* Color oscuro para el texto */
+    text-align: justify; /* Justificación para un aspecto profesional */
+    padding: 40px; /* Espaciado interno del texto */
+    background-color: rgb(243, 243, 243); /* Fondo blanco para resaltar el texto */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para el texto */
+}
+
+.grafica, .infografia, .infografia_1, .infografia_2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,12 +202,26 @@ body {
     margin-top: 20px;
 }
 
-.grafica img, .infografia img {
+.grafica img, .infografia img, .infografia_1 img, .infografia_2 img {
     width: 100%;           
     height: auto;          
     max-width: 100%;       
     display: block;        
     margin: 0 auto;        
+}
+
+.video {
+    display: flex;
+    justify-content: flex-end;  /* Esto alinea el video a la derecha */
+    align-items: center;        /* Alinea el video verticalmente */
+    width: 100%;
+}
+
+.video-size {
+    width: 600px; 
+    height: 400px; 
+    object-fit: cover; /* Mantener la relación de aspecto */
+    margin-left: auto;  /* Esto mueve el video hacia la derecha */
 }
 
 .scroll-animation {
@@ -241,7 +270,7 @@ body {
     .title, .subtitle {
         font-size: 1.2rem;
     }
-    .grafica img, .infografia img {
+    .grafica img, .infografia img .infografia_1 img, .infografia_2 img {
         width: 80%; 
     }
 }
@@ -259,7 +288,7 @@ body {
     .title, .subtitle {
         font-size: 1.2rem;
     }
-    .grafica img, .infografia img {
+    .grafica img, .infografia img, .infografia_1 img, .infografia_2 img {
         width: 70%;
     }
 }
@@ -277,11 +306,10 @@ body {
     .title, .subtitle {
         font-size: 1rem;
     }
-    .grafica img, .infografia img {
+    .grafica img, .infografia img, .infografia_1 img, .infografia_2 img {
         width: 60%; 
     }
 }
-
 
 @media (min-width: 1024px) {
     #flor_der {

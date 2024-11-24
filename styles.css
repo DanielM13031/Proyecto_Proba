@@ -34,14 +34,14 @@ body {
 }
 
 #H1_titulo {
-    font-size: 7vw;
+    font-size: 4vw;
     color: rgb(142, 172, 205);
     margin-bottom: 10px;
     text-align: center;
 }
 
 #descripcion {
-    font-size: 1.5vw;
+    font-size: 1vw;
     color: rgba(10, 38, 68, 0.733);
     max-width: 800px; 
     margin: 0 auto; 
@@ -247,6 +247,7 @@ body {
     font-family: Arial, sans-serif;
     letter-spacing: 1px;
     margin-top: 20px;
+    margin-left: 13vw;
 }
 
 .btn:hover{

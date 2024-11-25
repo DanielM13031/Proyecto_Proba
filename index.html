@@ -14,6 +14,45 @@
             color: #fff;
         }
 
+        /* Barra de navegación */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f1c40f;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e67e22;
+        }
+
+        /* Espaciado para que las secciones no queden cubiertas por la barra */
+        section {
+            padding: 60px 20px;
+            margin-top: 50px;
+        }
+
         /* Estilo del título */
         h1#H1_titulo {
             font-family: 'Cinzel', serif;
@@ -65,25 +104,64 @@
         }
 
         /* Imágenes */
-        .infografia img, .infografia_1 img, .infografia_2 img {
+        .infografia img {
             display: block;
             margin: 10px auto;
             border: 2px solid #fff;
             border-radius: 10px;
         }
     </style>
+</head>
 <body>
+     <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#estado-del-arte">Estado del Arte</a></li>
+            <li><a href="#visualizacion">Visualización de Información</a></li>
+            <li><a href="#conclusion">Conclusión</a></li>
+            <li><a href="#calificacion">Calificación</a></li>
+        </ul>
+    </nav>
 
-    <!-- Sección de inicio con fondo parallax -->
-    <section class="parallax-background scroll-animation" id="inicio"> 
-        <div id="content" class="scroll-animation">
-            <img id="flor_der" src="Flor.png" class="scroll-animation" alt="Flor decorativa derecha">
-            <h1 id="H1_titulo" class="scroll-animation">¿Por qué los jóvenes en Colombia no quieren tener hijos?</h1>
-            <p id="descripcion" class="scroll-animation">Proyecto de Investigación Probabilidad y Estadística 1 2024-2</p>
-            <p id="descripcion" class="scroll-animation">Realizado por: Estudiantes de Probabilidad y Estadística 1 2024-2</p>
-            <p id="descripcion" class="scroll-animation">Presentado por: Daniel Morales, Juan Esteban Torres, Camila Gomez, Diego Peñarete, Diana Serrato, Maria Lucia Mendoza.</p>
-            <img id="flor_izq" src="Flor.png" class="scroll-animation" alt="Flor decorativa izquierda">
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <h1 id="H1_titulo">¿Por qué los jóvenes en Colombia no quieren tener hijos?</h1>
+        <p>Proyecto de Investigación Probabilidad y Estadística 1 2024-2</p>
+        <p>Realizado por: Daniel Morales, Juan Esteban Torres, Camila Gomez, Diego Peñarete, Diana Serrato, Maria Lucia Mendoza.</p>
+    </section>
+
+    <!-- Sección de Introducción -->
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>Exploramos cómo factores sociales, económicos y culturales influyen en la natalidad en Colombia.</p>
+    </section>
+
+    <!-- Sección de Estado del Arte -->
+    <section id="estado-del-arte">
+        <h2>Estado del Arte</h2>
+        <p>Análisis de estudios previos relacionados con la disminución de la natalidad y los cambios en las dinámicas sociales.</p>
+    </section>
+
+    <!-- Sección de Visualización de Información -->
+    <section id="visualizacion">
+        <h2>Visualización de Información</h2>
+        <div class="infografia">
+            <img src="info_col.png" alt="Infografía interactiva" width="300" height="300">
         </div>
+    </section>
+
+    <!-- Sección de Conclusión -->
+    <section id="conclusion">
+        <h2>Conclusión</h2>
+        <p>El acceso a la educación, los servicios básicos y otros factores son determinantes en la reducción de la natalidad.</p>
+    </section>
+
+    <!-- Sección de Calificación -->
+    <section id="calificacion">
+        <h2>Calificación de la Página</h2>
+        <button class="btn" onclick="window.location.href='https://forms.gle/4UVdYE6hyPZMpHFY6';">Formulario de Calificación</button>
     </section>
 
     <!-- Sección de contexto -->

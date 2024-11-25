@@ -34,14 +34,14 @@ body {
 }
 
 #H1_titulo {
-    font-size: 7vw;
+    font-size: 4vw;
     color: rgb(142, 172, 205);
     margin-bottom: 10px;
     text-align: center;
 }
 
 #descripcion {
-    font-size: 1.5vw;
+    font-size: 1vw;
     color: rgba(10, 38, 68, 0.733);
     max-width: 800px; 
     margin: 0 auto; 
@@ -96,12 +96,10 @@ body {
     width: 80%; 
 }
 
-
-
 .video video {
-    width: 100%;
-    height: auto; 
-    max-width: 100%; 
+    max-width: 80%;       
+    height: auto;           
+    object-fit: contain;   
 }
 
 .text {
@@ -203,18 +201,21 @@ body {
 }
 
 .grafica img, .infografia img, .infografia_1 img, .infografia_2 img {
-    width: 100%;           
-    height: auto;          
-    max-width: 100%;       
-    display: block;        
-    margin: 0 auto;        
+    width: 100%;           /* Ocupa el 100% del ancho del contenedor */
+    max-width: 400px;      /* Tamaño máximo de 400px */
+    height: auto;          /* Mantener la proporción */
+    object-fit: contain;   /* Ajusta la imagen sin deformarla */
+    display: block;        /* Asegura que sea un bloque independiente */
+    margin: 0 auto;        /* Centra la imagen */
 }
 
 .video {
     display: flex;
-    justify-content: flex-end;  /* Esto alinea el video a la derecha */
-    align-items: center;        /* Alinea el video verticalmente */
-    width: 100%;
+    justify-content: center; 
+    align-items: center;  
+    width: 100%;            
+    height: auto;           
+    margin: 0 auto;         
 }
 
 .video-size {
@@ -247,6 +248,7 @@ body {
     font-family: Arial, sans-serif;
     letter-spacing: 1px;
     margin-top: 20px;
+    margin-left: 35vw;
 }
 
 .btn:hover{

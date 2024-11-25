@@ -11,8 +11,6 @@ body {
     transition: background-color 0.2s ease; 
 }
 
-
-
 #inicio, #contexto, #datos, #video {
     min-height: 100vh; 
     width: 100vw;
@@ -70,6 +68,14 @@ body {
     text-align: center;
 }
 
+#descripcion {
+    font-size: 1.2rem ;
+    line-height: 2rem ;
+    color: rgba(10, 38, 68, 0.9) ;
+    text-align: center ;
+    margin-top: 25px ;
+}
+
 .conclusion p {
     font-size: 2vw;
     color: rgb(10, 38, 68);
@@ -97,9 +103,12 @@ body {
 }
 
 .video video {
-    max-width: 80%;       
-    height: auto;           
+    width: 80%;            
+    max-width: 750px;     
+    height: auto;          
     object-fit: contain;   
+    display: block;
+    margin: 0 auto;        
 }
 
 .text {
@@ -201,12 +210,12 @@ body {
 }
 
 .grafica img, .infografia img, .infografia_1 img, .infografia_2 img {
-    width: 100%;           /* Ocupa el 100% del ancho del contenedor */
-    max-width: 400px;      /* Tamaño máximo de 400px */
-    height: auto;          /* Mantener la proporción */
-    object-fit: contain;   /* Ajusta la imagen sin deformarla */
-    display: block;        /* Asegura que sea un bloque independiente */
-    margin: 0 auto;        /* Centra la imagen */
+    width: 100%;           
+    max-width: 400px;     
+    height: auto;         
+    object-fit: contain;   
+    display: block;        
+    margin: 0 auto;       
 }
 
 .video {
@@ -221,8 +230,8 @@ body {
 .video-size {
     width: 600px; 
     height: 400px; 
-    object-fit: cover; /* Mantener la relación de aspecto */
-    margin-left: auto;  /* Esto mueve el video hacia la derecha */
+    object-fit: cover; 
+    margin-left: auto;  
 }
 
 .scroll-animation {
@@ -257,6 +266,15 @@ body {
 
 .btn:active{
     transform: scale(0.95);
+}
+
+.infografia_1 img, .infografia_2 img {
+    width: 90%;         
+    max-width: 800px;      
+    height: auto;          
+    object-fit: contain;  
+    display: block;
+    margin: 0 auto;     
 }
 
 @media (max-width: 1024px) {

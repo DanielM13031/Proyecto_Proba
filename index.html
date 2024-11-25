@@ -66,7 +66,7 @@
 
         /* Sección de Inicio con fondo de imagen */
         section#inicio {
-            background-image: url('background-image.jpg'); /* Aquí debes poner la URL de tu imagen */
+            background-image: url('niños.png'); /* Aquí debes poner la URL de tu imagen */
             background-size: cover;
             background-position: center;
             height: 100vh; /* La sección ocupará toda la altura de la ventana */
@@ -78,24 +78,23 @@
             position: relative;
         }
 
-        section#inicio h1#H1_titulo {
-            font-family: 'Cinzel', serif;
-            font-size: 2.5rem;
-            text-align: left;
-            margin: 0;
-        }
-
-        section#inicio p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin: 10px 0;
-        }
-
-        /* Estilo de las otras secciones */
+        /* Espaciado de las secciones */
         section {
             padding: 80px 40px; /* Espaciado general */
             margin-left: 80px; /* Desplaza las secciones hacia la derecha */
             min-height: 100vh;
+        }
+
+        /* Sección específica */
+        section#inicio {
+            background: transparent;
+        }
+
+        h1#H1_titulo {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            color: #f1c40f;
         }
 
         h2 {
@@ -146,11 +145,9 @@
 
     <!-- Secciones -->
     <section id="inicio">
-        <div>
-            <h1 id="H1_titulo">¿Por qué los jóvenes en Colombia no quieren tener hijos?</h1>
-            <p>Proyecto de Investigación Probabilidad y Estadística 1 2024-2</p>
-            <p>Realizado por: Daniel Morales, Juan Esteban Torres, Camila Gomez, Diego Peñarete, Diana Serrato, Maria Lucia Mendoza.</p>
-        </div>
+        <h1 id="H1_titulo">¿Por qué los jóvenes en Colombia no quieren tener hijos?</h1>
+        <p>Proyecto de Investigación Probabilidad y Estadística 1 2024-2</p>
+        <p>Realizado por: Daniel Morales, Juan Esteban Torres, Camila Gomez, Diego Peñarete, Diana Serrato, Maria Lucia Mendoza.</p>
     </section>
 
     <section id="introduccion">

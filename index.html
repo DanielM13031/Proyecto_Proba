@@ -6,12 +6,12 @@
     <title>Natalidad en Colombia</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Configuración general */
+        /* Fondo con degradado */
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #9b59b6, #3498db);
             color: #fff;
-            transition: background-color 0.5s ease; /* Transición de color */
         }
 
         /* Logo en la esquina superior izquierda */
@@ -29,7 +29,7 @@
             height: auto;
         }
 
-        /* Barra de navegación fija en la parte superior */
+        /* Barra de navegación en la parte superior */
         nav {
             position: fixed;
             top: 0;
@@ -51,13 +51,17 @@
             gap: 20px;
         }
 
+        nav ul li {
+            display: inline;
+        }
+
         nav ul li a {
             text-decoration: none;
             color: #f1c40f;
             font-weight: bold;
+            transition: color 0.3s, background-color 0.3s;
             padding: 10px 15px;
             border-radius: 5px;
-            transition: color 0.3s, background-color 0.3s;
         }
 
         nav ul li a:hover, nav ul li a.active {
@@ -69,42 +73,36 @@
         section {
             padding: 80px 40px; /* Espaciado general */
             margin-left: 80px; /* Desplaza las secciones hacia la derecha */
-            min-height: 100vh;
         }
 
-        /* Sección específica */
-        section#inicio {
-            background: transparent;
-        }
-
+        /* Título del sitio */
         h1#H1_titulo {
             font-family: 'Cinzel', serif;
             font-size: 2.5rem;
             text-align: center;
             color: #f1c40f;
+            margin: 20px 0;
         }
 
-        h2 {
-            font-size: 2rem;
-            margin-top: 0;
-        }
-
+        /* Párrafos */
         p {
             font-size: 1rem;
             line-height: 1.6;
-            margin: 10px 0;
+            margin: 10px 20px;
+            text-align: justify;
         }
 
+        /* Botón de formulario */
         button.btn {
             background-color: #f39c12;
             color: #fff;
             border: none;
             padding: 10px 20px;
+            margin: 20px auto;
+            display: block;
             cursor: pointer;
             border-radius: 5px;
             font-size: 1rem;
-            display: block;
-            margin: 20px auto;
         }
 
         button.btn:hover {
@@ -130,50 +128,49 @@
         </ul>
     </nav>
 
-    <!-- Secciones -->
+    <!-- Sección de Inicio -->
     <section id="inicio">
         <h1 id="H1_titulo">¿Por qué los jóvenes en Colombia no quieren tener hijos?</h1>
         <p>Proyecto de Investigación Probabilidad y Estadística 1 2024-2</p>
         <p>Realizado por: Daniel Morales, Juan Esteban Torres, Camila Gomez, Diego Peñarete, Diana Serrato, Maria Lucia Mendoza.</p>
     </section>
 
+    <!-- Sección de Introducción -->
     <section id="introduccion">
         <h2>Introducción</h2>
         <p>Exploramos cómo factores sociales, económicos y culturales influyen en la natalidad en Colombia.</p>
     </section>
 
+    <!-- Sección de Estado del Arte -->
     <section id="estado-del-arte">
         <h2>Estado del Arte</h2>
         <p>Análisis de estudios previos relacionados con la disminución de la natalidad y los cambios en las dinámicas sociales.</p>
     </section>
 
+    <!-- Sección de Visualización de Información -->
     <section id="visualizacion">
         <h2>Visualización de Información</h2>
-        <img src="info_col.png" alt="Infografía interactiva" width="300" height="300">
+        <div class="infografia">
+            <img src="info_col.png" alt="Infografía interactiva" width="300" height="300">
+        </div>
     </section>
 
+    <!-- Sección de Conclusión -->
     <section id="conclusion">
         <h2>Conclusión</h2>
         <p>El acceso a la educación, los servicios básicos y otros factores son determinantes en la reducción de la natalidad.</p>
     </section>
 
+    <!-- Sección de Calificación -->
     <section id="calificacion">
         <h2>Calificación de la Página</h2>
         <button class="btn" onclick="window.location.href='https://forms.gle/4UVdYE6hyPZMpHFY6';">Formulario de Calificación</button>
     </section>
 
     <script>
-        // Cambiar color de fondo según sección activa
+        // Cambiar el color de la barra según la sección activa
         const navLinks = document.querySelectorAll('.nav-link');
         const sections = document.querySelectorAll('section');
-        const colors = {
-            inicio: '#3498db',
-            introduccion: '#9b59b6',
-            "estado-del-arte": '#1abc9c',
-            visualizacion: '#e74c3c',
-            conclusion: '#e67e22',
-            calificacion: '#2ecc71'
-        };
 
         window.addEventListener('scroll', () => {
             let currentSection = '';
@@ -185,12 +182,6 @@
                 }
             });
 
-            // Cambiar color del cuerpo
-            if (currentSection) {
-                document.body.style.backgroundColor = colors[currentSection];
-            }
-
-            // Actualizar color activo en la barra de navegación
             navLinks.forEach((link) => {
                 link.classList.remove('active');
                 if (link.getAttribute('href').substring(1) === currentSection) {

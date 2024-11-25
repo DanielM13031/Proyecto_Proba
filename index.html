@@ -24,7 +24,7 @@
         }
 
         .logo img {
-            width: 100%;
+            width: 130%;
             height: auto;
         }
 
@@ -35,7 +35,7 @@
             left: 0;
             width: 100%;
             height: 60px;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(198,228,254);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -52,7 +52,7 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #f1c40f;
+            color:#a586e3;
             font-weight: bold;
             padding: 10px 15px;
             border-radius: 5px;
@@ -60,7 +60,7 @@
         }
 
         nav ul li a:hover, nav ul li a.active {
-            color: #3498db;
+            color: #c6e4fe;
             background-color: #f1c40f;
         }
 
@@ -110,7 +110,7 @@
         }
 
         button.btn {
-            background-color: #f39c12;
+            background-color: #a586e3;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -122,7 +122,7 @@
         }
 
         button.btn:hover {
-            background-color: #e67e22;
+            background-color: #a586e3;
         }
     </style>
 </head>
@@ -156,6 +156,13 @@
     <section id="introduccion">
         <h2>Introducción</h2>
         <p>Exploramos cómo factores sociales, económicos y culturales influyen en la natalidad en Colombia.</p>
+         <!-- Sección de contexto -->
+        <div class="container scroll-animation">
+            <div class="video scroll-animation">
+                <video class="video_1_size" controls>
+                    <source src="video_3.mp4" type="video/mp4">
+                </video>
+            </div>
     </section>
 
     <section id="estado-del-arte">
@@ -183,12 +190,12 @@
         const navLinks = document.querySelectorAll('.nav-link');
         const sections = document.querySelectorAll('section');
         const colors = {
-            inicio: '#3498db',
-            introduccion: '#9b59b6',
-            "estado-del-arte": '#1abc9c',
-            visualizacion: '#e74c3c',
-            conclusion: '#e67e22',
-            calificacion: '#2ecc71'
+            inicio: '#92b8ff',
+            introduccion: '#bc57d7',
+            "estado-del-arte": '#c4dafa',
+            visualizacion: '#84b6f4',
+            conclusion: '#4d82bc',
+            calificacion: '##92b8ff'
         };
 
         window.addEventListener('scroll', () => {
@@ -216,15 +223,7 @@
         });
     </script>
 
-    <!-- Sección de contexto -->
-    <section class="section scroll-animation" id="contexto"> 
-        <div class="container scroll-animation">
-            <div class="video scroll-animation">
-                <video class="video_1_size" controls>
-                    <source src="video_3.mp4" type="video/mp4">
-                </video>
-            </div>
-    </section>
+   
 
     <!-- Sección de datos estadísticos y análisis -->
     <section class="section scroll-animation" id="datos">

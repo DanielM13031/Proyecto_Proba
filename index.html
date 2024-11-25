@@ -6,18 +6,6 @@
     <title>Natalidad en Colombia</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-             /* Estilo de las infografías: Aumentar tamaño */
-        .infografia img, .infografia_1 img, .infografia_2 img {
-            width: 600px; /* Tamaño mayor para las infografías */
-            height: auto;
-        }
-    
-        /* Estilo de los videos: Reducir tamaño */
-        .video video {
-            width: 80%; /* Hacer los videos más pequeños */
-            max-width: 600px; /* Máximo tamaño de los videos */
-            height: auto;
-        }
         /* Configuración general */
         body {
             margin: 0;
@@ -136,6 +124,18 @@
         button.btn:hover {
             background-color: #a586e3;
         }
+
+        /* Estilos para infografías */
+        .infografia img {
+            width: 100%; /* Infografías más grandes */
+            height: auto;
+        }
+
+        /* Estilos para videos */
+        .video video {
+            width: 50%; /* Videos más pequeños */
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -168,13 +168,14 @@
     <section id="introduccion">
         <h2>Introducción</h2>
         <p>Exploramos cómo factores sociales, económicos y culturales influyen en la natalidad en Colombia.</p>
-         <!-- Sección de contexto -->
+        <!-- Sección de contexto -->
         <div class="container scroll-animation">
             <div class="video scroll-animation">
                 <video class="video_1_size" controls>
                     <source src="video_3.mp4" type="video/mp4">
                 </video>
             </div>
+        </div>
     </section>
 
     <section id="estado-del-arte">
@@ -235,171 +236,21 @@
             <div class="container scroll-animation">
                 <div class="infografia-text">
                     <p>Los mapas presentan la proporción de hogares con acceso a energía, agua potable y saneamiento en Colombia por departamento. 
-                        En el acceso a energía, los departamentos de Cundinamarca y Bogotá muestran una mayor cobertura, mientras que Amazonas, Vaupés y Guainía tienen una cobertura más baja. 
-                        En el acceso al agua potable, Bogotá, Cundinamarca y Antioquia presentan mayores niveles de acceso, mientras que Amazonas y la Orinoquía muestran menor cobertura. En cuanto al acceso a saneamiento,
-                         Bogotá, Antioquia y Valle del Cauca tienen una mayor cobertura, mientras que Amazonas, Vaupés y Chocó tienen menor acceso.
+                        En el acceso a energía, los departamentos de Cundinamarca y Bogotá muestran una mayor cobertura, con valores cercanos al 100%. 
+                        Sin embargo, departamentos como Chocó y Amazonas tienen valores inferiores. 
+                        En cuanto a agua potable, la región Caribe, especialmente departamentos como La Guajira y Córdoba, presenta mayor desigualdad en el acceso a este recurso. 
+                        En cuanto al saneamiento, los departamentos de Santander y Antioquia se destacan por tener un acceso mayor al 90%, mientras que otros como Vaupés y Vichada presentan problemas significativos en este aspecto.
                     </p>
                 </div>
-                <div class="infografia">
-                    <img src="info_col.png" alt="Infografía interactiva" width="300" height="300">
-                </div>
-            </div>
-        </section>
-    
-        <section class="section scroll-animation" id="infografia_1">
-            <div class="container scroll-animation">
                 <div class="infografia_1">
-                    <img src="info_1.png" alt="Infografía interactiva" width="300" height="300">
+                    <img src="infografia1.jpg" alt="Infografía 1">
                 </div>
-                <div class="infografia-text">
-                    <p>
-                        La infografía presenta un análisis comparativo de la tasa de fecundidad entre América Latina y Estados Unidos en el período 2010-2022. 
-                        Se plantea como hipótesis nula que las tasas de fecundidad promedio en ambas regiones son iguales, mientras que la hipótesis alternativa sugiere que la tasa en América Latina es mayor. 
-                        Los hallazgos incluyen que la diferencia promedio entre las tasas de fecundidad de ambas regiones oscila entre 0.17 y 0.26 nacimientos por mujer,
-                        algunos países latinoamericanos muestran tasas considerablemente más altas que Estados Unidos, y se identifican países cuya mayor tasa de natalidad contribuye significativamente al promedio regional. 
-                        La información se basa en datos de tasas de fecundidad total (nacimientos por mujer) y pruebas estadísticas para comparar los promedios de las tasas en ambas regiones.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section scroll-animation" id="infografia_2">
-        <div class="container scroll-animation">
-            <div class="infografia-text">
-                <p>
-                    La gráfica presenta una relación directa entre el nivel educativo de las madres y la edad promedio a la que tienen su primer hijo. A medida que el nivel educativo de la madre aumenta, 
-                    también lo hace la edad promedio al momento de tener su primer hijo. Los valores aumentan progresivamente desde las madres sin nivel educativo o con educación básica hasta aquellas con títulos 
-                    universitarios o de posgrado, que tienden a retrasar significativamente la maternidad. En contraste, las madres con niveles educativos bajos, como "Ninguno", "Preescolar" o "Primaria", 
-                    tienen a sus hijos a edades más tempranas, generalmente por debajo de los 20 años. Esto sugiere que factores como el acceso limitado a la educación superior, presiones económicas y culturales, 
-                    pueden influir en el momento de la maternidad.
-                </p>
-            </div>            
-            <div class="infografia_2">
-                <img src="info_2.png" alt="Infografía interactiva" width="300" height="300">
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section scroll-animation" id="infografia_1">
-        <div class="container scroll-animation">
-            <div class="infografia_1">
-                <img src="info_3.jpeg" alt="Infografía interactiva" width="300" height="300">
-            </div>
-            <div class="infografia-text">
-                <p>
-                    La infografía muestra la relación entre el nivel educativo de las madres y su acceso a servicios básicos. Se observa que a mayor nivel educativo, menor es el número promedio de hijos, con una tendencia negativa entre ambas variables. En cuanto a los servicios, el acceso a electricidad, acueducto, alcantarillado y recolección de basura mejora con el aumento del nivel educativo, siendo las madres sin educación las que tienen menor acceso a estos servicios. Por ejemplo, solo el 37% de las mujeres sin educación acceden al acueducto, 
-                    mientras que el 94% de las mujeres con educación de posgrado lo tienen. La brecha es similar en el acceso a alcantarillado y recolección de basura, donde las mujeres con menos educación tienen acceso muy limitado.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="section scroll-animation" id="infografia_2">
-        <div class="container scroll-animation">
-            <div class="infografia-text">
-                <p>
-                    La infografía presenta una prueba de hipótesis para analizar las tasas de fecundidad por continente desde el año 2000. La hipótesis nula (H0) 
-                    establece que el promedio de la tasa de fecundidad es igual a 2 hijos por mujer, mientras que la hipótesis alternativa (H1) propone que este 
-                    promedio es menor a 2 hijos por mujer. Según los resultados, en África y Asia se aceptó la hipótesis nula para todos los años, indicando tasas iguales o superiores a 2 hijos por mujer. 
-                    En Europa, América del Norte y América del Sur se rechazó la hipótesis nula en varios años, reflejando tasas consistentemente menores a 2 hijos por mujer. 
-                    En Oceanía, se observa un comportamiento mixto, con aceptación de H0 en los primeros años y rechazo en los más recientes. Los valores p reflejan estas decisiones anuales, indicando tendencias regionales en las tasas de fecundidad.
-                </p>
-            </div>            
-            <div class="infografia_2">
-                <img src="info_4.png" alt="Infografía interactiva" width="300" height="300">
-            </div>
-        </div>
-    </section>
-
-    <section class="section scroll-animation" id="infografia_1">
-        <div class="container scroll-animation">
-            <div class="infografia_1">
-                <img src="info_5.png" alt="Infografía interactiva" width="300" height="300">
-            </div>
-            <div class="infografia-text">
-                <p>
-                    La infografía presenta un análisis sobre las diferencias en el número promedio de hijos entre mujeres en áreas urbanas 
-                    y rurales en Colombia. Se plantean dos hipótesis: la nula (H0), que establece que no hay diferencia en el número de hijos, 
-                    y la alternativa (H1), que sugiere que sí existe una diferencia. El análisis muestra que las variables alcantarillado y gas 
-                    tienen un impacto significativo en la reducción del número promedio de hijos, mientras que electricidad, 
-                    acueducto y recolección de basura no presentan relación significativa.
-                </p>
-            </div>
-        </div>
-    </section>
-
-           
-    </section>
-
-    <section id="conclusion">
-        <h2>Conclusión</h2>
-        <p>El acceso a la educación, los servicios básicos y otros factores son determinantes en la reducción de la natalidad.</p>
-         <!-- Sección de conclusiones -->
-        <section class="section scroll-animation" id="conclusiones">
-            <div class="container scroll-animation">
-                <div class="infografia-text">
-                    <p>La natalidad en América Latina, y específicamente en Colombia, está influenciada por diversos factores que reflejan las complejas dinámicas sociales, económicas y culturales de la región. 
-                        El análisis realizado ha permitido identificar elementos clave como el acceso a servicios básicos, el nivel educativo y las diferencias entre áreas urbanas y rurales, los cuales desempeñan un papel importante en las decisiones familiares sobre el número de hijos.
-                        Por un lado, el acceso a servicios como el alcantarillado y el gas ha mostrado una relación directa con la reducción del promedio de hijos por mujer. Por otro lado, el nivel educativo, particularmente el de las mujeres, emerge como un factor 
-                        decisivo, evidenciando cómo la educación está asociada a menores tasas de natalidad.
-                        Asimismo, las diferencias entre zonas urbanas y rurales destacan las disparidades en las tasas de natalidad, con mayor dispersión en las áreas urbanas y 
-                        valores más concentrados en las rurales. Estas variaciones reflejan las diversas realidades que enfrentan las familias dependiendo de su entorno geográfico.</p>
+                <div class="infografia_2">
+                    <img src="infografia2.jpg" alt="Infografía 2">
                 </div>
             </div>
         </section>
     </section>
-
-    <section id="calificacion">
-        <h2>Calificación de la Página</h2>
-        <section class="section scroll-animation" id="video"> 
-            <div class="container scroll-animation">
-                <div class="video scroll-animation">
-                    <video class="video_1_size" controls>
-                        <source src="video_4.mp4" type="video/mp4">
-                    </video>                
-                </div>
-            </div>
-        </section>
-        <button class="btn" onclick="window.location.href='https://forms.gle/4UVdYE6hyPZMpHFY6';">Formulario de Calificación</button>
-    </section>
-
-    <script>
-        // Cambiar color de fondo según sección activa
-        const navLinks = document.querySelectorAll('.nav-link');
-        const sections = document.querySelectorAll('section');
-        const colors = {
-            inicio: '#92b8ff',
-            introduccion: '#bc57d7',
-            "estado-del-arte": '#c4dafa',
-            visualizacion: '#84b6f4',
-            conclusion: '#4d82bc',
-            calificacion: '##92b8ff'
-        };
-
-        window.addEventListener('scroll', () => {
-            let currentSection = '';
-            
-            sections.forEach((section) => {
-                const sectionTop = section.offsetTop - 100; // Ajusta la distancia al inicio
-                if (window.scrollY >= sectionTop) {
-                    currentSection = section.getAttribute('id');
-                }
-            });
-
-            // Cambiar color del cuerpo
-            if (currentSection) {
-                document.body.style.backgroundColor = colors[currentSection];
-            }
-
-            // Actualizar color activo en la barra de navegación
-            navLinks.forEach((link) => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === currentSection) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
 
 </body>
 </html>

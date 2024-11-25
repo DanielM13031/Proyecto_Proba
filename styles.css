@@ -192,6 +192,14 @@ body {
     flex: 1;
 }
 
+.git{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-left: 32px;
+}
+
 .contexto, .infografia-text {
     display: flex;
     justify-content: center;

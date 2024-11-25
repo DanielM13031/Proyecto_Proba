@@ -21,7 +21,6 @@
             left: 10px;
             width: 60px;
             height: 60px;
-            z-index: 1000;
         }
 
         .logo img {
@@ -29,30 +28,29 @@
             height: auto;
         }
 
-        /* Barra de navegación en la parte superior */
+        /* Barra de navegación a la derecha */
         nav {
             position: fixed;
             top: 0;
-            left: 0;
-            width: 100%;
-            height: 60px;
+            right: 0;
+            height: 100%;
+            width: 200px;
             background: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            z-index: 1000;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            z-index: 999;
         }
 
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
-            display: flex;
-            gap: 20px;
         }
 
         nav ul li {
-            display: inline;
+            margin: 15px 0;
         }
 
         nav ul li a {
@@ -60,7 +58,7 @@
             color: #f1c40f;
             font-weight: bold;
             transition: color 0.3s, background-color 0.3s;
-            padding: 10px 15px;
+            padding: 5px 10px;
             border-radius: 5px;
         }
 
@@ -71,8 +69,8 @@
 
         /* Espaciado de las secciones */
         section {
-            padding: 80px 40px; /* Espaciado general */
-            margin-left: 80px; /* Desplaza las secciones hacia la derecha */
+            padding: 60px 20px;
+            margin-left: 220px; /* Ajusta el contenido para que no quede cubierto por la barra */
         }
 
         /* Título del sitio */

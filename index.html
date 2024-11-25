@@ -14,66 +14,46 @@
             color: #fff;
         }
 
-        /* Logo en la esquina superior izquierda */
-        .logo {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            width: 60px;
-            height: 60px;
-        }
-
-        .logo img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Barra de navegación a la derecha */
+        /* Barra de navegación */
         nav {
             position: fixed;
             top: 0;
-            right: 0;
-            height: 100%;
-            width: 200px;
+            width: 100%;
             background: rgba(0, 0, 0, 0.8);
-            padding: 20px 0;
+            padding: 10px 0;
             z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
 
         nav ul {
             list-style: none;
+            display: flex;
+            justify-content: center;
             margin: 0;
             padding: 0;
         }
 
         nav ul li {
-            margin: 15px 0;
+            margin: 0 15px;
         }
 
         nav ul li a {
             text-decoration: none;
             color: #f1c40f;
             font-weight: bold;
-            transition: color 0.3s, background-color 0.3s;
-            padding: 5px 10px;
-            border-radius: 5px;
+            transition: color 0.3s;
         }
 
-        nav ul li a:hover, nav ul li a.active {
-            color: #3498db;
-            background-color: #f1c40f;
+        nav ul li a:hover {
+            color: #e67e22;
         }
 
-        /* Espaciado de las secciones */
+        /* Espaciado para que las secciones no queden cubiertas por la barra */
         section {
             padding: 60px 20px;
-            margin-left: 220px; /* Ajusta el contenido para que no quede cubierto por la barra */
+            margin-top: 50px;
         }
 
-        /* Título del sitio */
+        /* Estilo del título */
         h1#H1_titulo {
             font-family: 'Cinzel', serif;
             font-size: 2.5rem;
@@ -106,23 +86,42 @@
         button.btn:hover {
             background-color: #e67e22;
         }
+
+        /* Secciones */
+        .section {
+            padding: 40px 20px;
+        }
+
+        /* Estilo para videos */
+        .video {
+            text-align: center;
+        }
+
+        .video video {
+            max-width: 100%;
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+
+        /* Imágenes */
+        .infografia img {
+            display: block;
+            margin: 10px auto;
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
-    <!-- Logo -->
-    <div class="logo">
-        <img src="logo.png" alt="Logo del sitio">
-    </div>
-
-    <!-- Barra de navegación -->
+     <!-- Barra de navegación -->
     <nav>
         <ul>
-            <li><a href="#inicio" class="nav-link">Inicio</a></li>
-            <li><a href="#introduccion" class="nav-link">Introducción</a></li>
-            <li><a href="#estado-del-arte" class="nav-link">Estado del Arte</a></li>
-            <li><a href="#visualizacion" class="nav-link">Visualización</a></li>
-            <li><a href="#conclusion" class="nav-link">Conclusión</a></li>
-            <li><a href="#calificacion" class="nav-link">Calificación</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#estado-del-arte">Estado del Arte</a></li>
+            <li><a href="#visualizacion">Visualización de Información</a></li>
+            <li><a href="#conclusion">Conclusión</a></li>
+            <li><a href="#calificacion">Calificación</a></li>
         </ul>
     </nav>
 
@@ -164,30 +163,6 @@
         <h2>Calificación de la Página</h2>
         <button class="btn" onclick="window.location.href='https://forms.gle/4UVdYE6hyPZMpHFY6';">Formulario de Calificación</button>
     </section>
-
-    <script>
-        // Cambiar el color de la barra según la sección activa
-        const navLinks = document.querySelectorAll('.nav-link');
-        const sections = document.querySelectorAll('section');
-
-        window.addEventListener('scroll', () => {
-            let currentSection = '';
-            
-            sections.forEach((section) => {
-                const sectionTop = section.offsetTop - 100; // Ajusta la distancia al inicio
-                if (window.scrollY >= sectionTop) {
-                    currentSection = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach((link) => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === currentSection) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
 
     <!-- Sección de contexto -->
     <section class="section scroll-animation" id="contexto"> 
